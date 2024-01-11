@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Add progressbar.js library -->
+  <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.1/dist/progressbar.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#" onclick="scrollToSection('firstsec')">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="ShubhangiResume.pdf" download> Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsec">
+      <div class="leftsec">
+        Hi, My name is<span class="purple"> Shubhangi</span>
+        <div>and I am a</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsec">
+        <img src="bg.png" alt="" />
+      </div>
+    </section>
+    <section class="secondsec" id="projects">
+      <hr />
+      <h1>PROJECTS</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <div class="vertical-title">
+            Weather Detection Website
+          </div>
+          <div class="vertical-desc">
+            A website that uses OpenWeathermap API to show the weather of
+            any city worldwide.
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-title">
+            Student Enrollment
+          </div>
+          <div class="vertical-desc">
+Implemented a ChatBot feature to facilitate seamless student data enrollment 
+            and display, enhancing user interaction and experience.
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-title">
+            Image Background Remover
+          </div>
+          <div class="vertical-desc">
+            A web application using Javascript which removes background from images.
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-title">
+            Restaurant Website Frontend
+          </div>
+          <div class="vertical-desc">
+            Built an interactive restaurant website with menu and implement chatbot for
+             enabling customers to conveniently reserve tables.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="mh-skills-inner">
+              <div class="mh-professional-skill">
+                <hr />
+                <h3>Technical Skills</h3>
+                <!-- Technical skills with progress charts -->
+                <div class="progress-chart">
+                  <div class="progress-label">Javascript</div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                  </div>
+                  <div class="percent-num">60%</div>
+                </div>
+
+                <div class="progress-chart">
+                  <div class="progress-label">ReactJS</div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                  </div>
+                  <div class="percent-num">70%</div>
+                </div>
+
+                <div class="progress-chart">
+                  <div class="progress-label">HTML</div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                  <div class="percent-num">80%</div>
+                </div>
+
+                <div class="progress-chart">
+                  <div class="progress-label">C++</div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                  </div>
+                  <div class="percent-num">50%</div>
+                </div>
+
+                <div class="progress-chart">
+                  <div class="progress-label">Python</div>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                  </div>
+                  <div class="percent-num">40%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="mh-professional-skills">
+              <h3>Professional Skills</h3>
+              <div class="circle-container">
+                <div class="circle-progress" id="communication-progress">
+                  <div class="circle-progress-text">Communication<br>95%</div>
+                </div>
+                <div class="circle-progress" id="creativity-progress">
+                  <div class="circle-progress-text">Creativity<br>85%</div>
+                </div>
+              </div>
+              <div class="circle-container">
+                <div class="circle-progress teamwork" id="teamwork-progress">
+                  <div class="circle-progress-text">Team Work<br>80%</div>
+                </div>
+                <div class="circle-progress" id="time-management-progress">
+                  <div class="circle-progress-text">Time Management<br>90%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="contactUs" id="contact">
+      <div class="title">
+        <hr />
+        <h3>Get in Touch</h3>
+        <h1>Contact Me</h1>
+        <div class="box">
+          <div class="contact form">
+            <h3>Send Message</h3>
+            <form>
+              <div class="formBox">
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Your Name" />
+                  </div>
+                </div>
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Email</span>
+                    <input type="text" name="name" placeholder="Your Email Address" />
+                  </div>
+                </div>
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Mobile No.</span>
+                    <input type="text" name="name" placeholder="Your Mobile No." />
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputBox">
+                    <span>Message</span>
+                    <textarea name="message" placeholder="Type your message here..."></textarea>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputBox">
+                    <input type="submit" value="Send">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact info">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+              <div>
+                <span><i class="uil uil-location-pin-alt"></i></span>
+                <p>Bhubaneswar,Odisha</p>
+              </div>
+              <div>
+                <span><i class="uil uil-envelope-upload"></i></span>
+                <a href="mailto:shubhangi3237@gmail.com">shubhangi3237@gmail.com</a>
+              </div>
+              <ul class="sci">
+                <li><a href="https://www.linkedin.com/in/shubhangi-shekhar-346250201/"><i
+                      class="uil uil-linkedin"></i></a></li>
+                <li><a href="https://github.com/Shubhangi0905"><i class="uil uil-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29926.099265958794!2d85.80364207800935!3d20.
+              351431629667605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190912b69339ab%3A0xa11e7186a04f1474!2sPatia%2C%20Bhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1704994498155!5m2!1sen!2sin"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-left">
+        <p>&copy; 2024 Shubhangi. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="/">Privacy Policy</a></li>
+          <li><a href="/">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "UI/UX Designer", "Web Developer"],
+      typeSpeed: 50,
+    });
+
+    // Circular progress bar initialization
+    var communicationProgress = new ProgressBar.Circle("#communication-progress", {
+      color: "rgb(170, 107, 228)",
+      strokeWidth: 5,
+      trailWidth: 5,
+      duration: 1500, // animation duration in milliseconds
+      easing: "easeInOut",
+    });
+
+    var teamworkProgress = new ProgressBar.Circle("#teamwork-progress", {
+      color: "rgb(170, 107, 228)",
+      strokeWidth: 5,
+      trailWidth: 5,
+      duration: 1500,
+      easing: "easeInOut",
+    });
+
+    var timeManagementProgress = new ProgressBar.Circle("#time-management-progress", {
+      color: "rgb(170, 107, 228)",
+      strokeWidth: 5,
+      trailWidth: 5,
+      duration: 1500,
+      easing: "easeInOut",
+    });
+
+    var creativityProgress = new ProgressBar.Circle("#creativity-progress", {
+      color: "rgb(170, 107, 228)",
+      strokeWidth: 5,
+      trailWidth: 5,
+      duration: 1500,
+      easing: "easeInOut",
+    });
+
+    // Set progress values (adjust as needed)
+    communicationProgress.animate(0.95); // 95%
+    teamworkProgress.animate(0.80); // 80%
+    timeManagementProgress.animate(0.90); // 90%
+    creativityProgress.animate(0.85); // 85%
+  </script>
+</body>
+
+</html>
